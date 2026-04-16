@@ -17,7 +17,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train and evaluate DSCP LightGCN.')
-    parser.add_argument('--dataset', default='gowalla', help='Dataset name supported by load_data.py.')
+    parser.add_argument('--dataset', default='grocery', help='Dataset name supported by load_data.py.')
     parser.add_argument('--embedding-dim', type=int, default=16, help='Embedding dimension for the final model.')
     parser.add_argument(
         '--random-seeds',

@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the default Gowalla DSCP experiment with the same five seeds used in the notebook:
+Run the default Grocery DSCP experiment with the same five seeds used in the paper:
 
 ```bash
 python dscp_lightgcn.py
@@ -34,11 +34,13 @@ python x_dscp_lightgcn.py
 Example with custom settings:
 
 ```bash
-python dscp_lightgcn.py --dataset gowalla --embedding-dim 16 --random-seeds 111 222 --alpha 0.1 --beta 0.1
+python dscp_lightgcn.py --dataset grocery --embedding-dim 16 --random-seeds 111 222 --alpha 0.1 --beta 0.1
 ```
 
 Results are saved to `DSCP_LightGCN-<dataset>-results.npy` or `X-DSCP_LightGCN-<dataset>-results.npy` by default, depending on the script.
 
-## Publishing Notes
+## Citation
 
-Before pushing to GitHub, review whether your local `data/` directory can be shared. The included `.gitignore` excludes local datasets and generated artifacts by default.
+If you use this code in your research, please cite the following paper:
+
+Yihong Zhang and Takahiro Hara, 2025. Modeling Social Behavior in Collaborative Filtering. In Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2025), Padua, Italy, pp. 1954-1963.
