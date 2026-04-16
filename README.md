@@ -35,7 +35,7 @@ python x_dscp_lightgcn.py
 Example with custom settings:
 
 ```bash
-python dscp_lightgcn.py --dataset grocery --embedding-dim 16 --random-seeds 111 222 --alpha 0.1 --beta 0.1
+python dscp_lightgcn.py --dataset grocery --embedding-dim 32 --random-seeds 111 222 --alpha 0.1 --beta 0.1
 ```
 
 
