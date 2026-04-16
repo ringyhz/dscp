@@ -463,7 +463,6 @@ def summarize_results(results_by_seed):
 
 def main():
     args = parse_args()
-    output_path = Path(args.output) if args.output else SCRIPT_DIR / f'DSCP_LightGCN-{args.dataset}-results.npy'
 
     results_by_seed = {}
     for seed in args.random_seeds:
@@ -479,9 +478,6 @@ def main():
             batch_size=args.batch_size,
             learning_rate=args.learning_rate,
         )
-
-    np.save(output_path, results_by_seed)
-    print(f'Saved results to {output_path}')
     summarize_results(results_by_seed)
 
 
