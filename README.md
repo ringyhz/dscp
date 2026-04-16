@@ -1,6 +1,7 @@
-# DSCP Experiments
+# Code for SIGIR'25 paper: Modeling Social Behavior in Collaborative Filtering
 
-This folder contains script versions of the DSCP and X-DSCP LightGCN experiments that were previously only available as notebooks.
+This code implements the DSCP described in our SIGIR'25 paper with LightGCN as the base model.
+Furthermore, an improved version that offers explainability, called X-DSCP is also provided.
 
 ## Files
 
@@ -19,7 +20,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the default Grocery DSCP experiment with the same five seeds used in the paper:
+Run the default Grocery DSCP experiment:
 
 ```bash
 python dscp_lightgcn.py
@@ -37,7 +38,6 @@ Example with custom settings:
 python dscp_lightgcn.py --dataset grocery --embedding-dim 16 --random-seeds 111 222 --alpha 0.1 --beta 0.1
 ```
 
-Results are saved to `DSCP_LightGCN-<dataset>-results.npy` or `X-DSCP_LightGCN-<dataset>-results.npy` by default, depending on the script.
 
 ## Citation
 
